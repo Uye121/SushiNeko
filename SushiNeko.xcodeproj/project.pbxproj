@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		077049C01D224B540063967A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077049BF1D224B540063967A /* Character.swift */; };
+		078551BD1D22DB5D00FA3B7E /* AnimationActions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 078551BC1D22DB5D00FA3B7E /* AnimationActions.sks */; };
+		07EF0AB91D233E8200E6E7EE /* IntroEffects.sks in Resources */ = {isa = PBXBuildFile; fileRef = 07EF0AB71D233E8200E6E7EE /* IntroEffects.sks */; };
+		07EF0ABA1D233E8200E6E7EE /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 07EF0AB81D233E8200E6E7EE /* spark.png */; };
+		07F8B4D11D21EF4700F050AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B4D01D21EF4700F050AB /* AppDelegate.swift */; };
+		07F8B4D31D21EF4700F050AB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 07F8B4D21D21EF4700F050AB /* GameScene.sks */; };
+		07F8B4D51D21EF4700F050AB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B4D41D21EF4700F050AB /* GameScene.swift */; };
+		07F8B4D71D21EF4700F050AB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B4D61D21EF4700F050AB /* GameViewController.swift */; };
+		07F8B4DA1D21EF4700F050AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F8B4D81D21EF4700F050AB /* Main.storyboard */; };
+		07F8B4DC1D21EF4700F050AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F8B4DB1D21EF4700F050AB /* Assets.xcassets */; };
+		07F8B4DF1D21EF4700F050AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F8B4DD1D21EF4700F050AB /* LaunchScreen.storyboard */; };
+		07F8B4EA1D21EF4700F050AB /* SushiNekoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B4E91D21EF4700F050AB /* SushiNekoTests.swift */; };
+		07F8B4F51D21EF4700F050AB /* SushiNekoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B4F41D21EF4700F050AB /* SushiNekoUITests.swift */; };
+		07F8B5041D21EFF200F050AB /* sfx_swipe.caf in Resources */ = {isa = PBXBuildFile; fileRef = 07F8B5031D21EFF200F050AB /* sfx_swipe.caf */; };
+		07F8B5151D21F06F00F050AB /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B5061D21F06F00F050AB /* MSButtonNode.swift */; };
+		07F8B5161D21F06F00F050AB /* MSReferenceNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B5071D21F06F00F050AB /* MSReferenceNode.swift */; };
+		07F8B5171D21F06F00F050AB /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B5091D21F06F00F050AB /* CGFloat+Extensions.swift */; };
+		07F8B5181D21F06F00F050AB /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B50A1D21F06F00F050AB /* CGPoint+Extensions.swift */; };
+		07F8B5191D21F06F00F050AB /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B50B1D21F06F00F050AB /* CGVector+Extensions.swift */; };
+		07F8B51A1D21F06F00F050AB /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B50C1D21F06F00F050AB /* Int+Extensions.swift */; };
+		07F8B51B1D21F06F00F050AB /* SKAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B50D1D21F06F00F050AB /* SKAction+Extensions.swift */; };
+		07F8B51C1D21F06F00F050AB /* SKAction+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B50E1D21F06F00F050AB /* SKAction+SpecialEffects.swift */; };
+		07F8B51D1D21F06F00F050AB /* SKColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B50F1D21F06F00F050AB /* SKColor+Extensions.swift */; };
+		07F8B51E1D21F06F00F050AB /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B5101D21F06F00F050AB /* SKNode+Extensions.swift */; };
+		07F8B51F1D21F06F00F050AB /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B5111D21F06F00F050AB /* SKTAudio.swift */; };
+		07F8B5201D21F06F00F050AB /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B5121D21F06F00F050AB /* SKTEffects.swift */; };
+		07F8B5211D21F06F00F050AB /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B5131D21F06F00F050AB /* SKTTimingFunctions.swift */; };
+		07F8B5221D21F06F00F050AB /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B5141D21F06F00F050AB /* Vector3.swift */; };
+		07F8B5241D21F2BB00F050AB /* SushiPiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F8B5231D21F2BB00F050AB /* SushiPiece.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07F8B4E61D21EF4700F050AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07F8B4C51D21EF4700F050AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F8B4CC1D21EF4700F050AB;
+			remoteInfo = SushiNeko;
+		};
+		07F8B4F11D21EF4700F050AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07F8B4C51D21EF4700F050AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F8B4CC1D21EF4700F050AB;
+			remoteInfo = SushiNeko;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		077049BF1D224B540063967A /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		078551BC1D22DB5D00FA3B7E /* AnimationActions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = AnimationActions.sks; path = ../AnimationActions.sks; sourceTree = "<group>"; };
+		07EF0AB71D233E8200E6E7EE /* IntroEffects.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = IntroEffects.sks; path = ../IntroEffects.sks; sourceTree = "<group>"; };
+		07EF0AB81D233E8200E6E7EE /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = ../spark.png; sourceTree = "<group>"; };
+		07F8B4CD1D21EF4700F050AB /* SushiNeko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SushiNeko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F8B4D01D21EF4700F050AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07F8B4D21D21EF4700F050AB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		07F8B4D41D21EF4700F050AB /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		07F8B4D61D21EF4700F050AB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		07F8B4D91D21EF4700F050AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07F8B4DB1D21EF4700F050AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07F8B4DE1D21EF4700F050AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07F8B4E01D21EF4700F050AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F8B4E51D21EF4700F050AB /* SushiNekoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SushiNekoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F8B4E91D21EF4700F050AB /* SushiNekoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiNekoTests.swift; sourceTree = "<group>"; };
+		07F8B4EB1D21EF4700F050AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F8B4F01D21EF4700F050AB /* SushiNekoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SushiNekoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F8B4F41D21EF4700F050AB /* SushiNekoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushiNekoUITests.swift; sourceTree = "<group>"; };
+		07F8B4F61D21EF4700F050AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F8B5031D21EFF200F050AB /* sfx_swipe.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sfx_swipe.caf; sourceTree = "<group>"; };
+		07F8B5061D21F06F00F050AB /* MSButtonNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		07F8B5071D21F06F00F050AB /* MSReferenceNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MSReferenceNode.swift; sourceTree = "<group>"; };
+		07F8B5091D21F06F00F050AB /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		07F8B50A1D21F06F00F050AB /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		07F8B50B1D21F06F00F050AB /* CGVector+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
+		07F8B50C1D21F06F00F050AB /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		07F8B50D1D21F06F00F050AB /* SKAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Extensions.swift"; sourceTree = "<group>"; };
+		07F8B50E1D21F06F00F050AB /* SKAction+SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+SpecialEffects.swift"; sourceTree = "<group>"; };
+		07F8B50F1D21F06F00F050AB /* SKColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKColor+Extensions.swift"; sourceTree = "<group>"; };
+		07F8B5101D21F06F00F050AB /* SKNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
+		07F8B5111D21F06F00F050AB /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		07F8B5121D21F06F00F050AB /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
+		07F8B5131D21F06F00F050AB /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
+		07F8B5141D21F06F00F050AB /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		07F8B5231D21F2BB00F050AB /* SushiPiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiPiece.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07F8B4CA1D21EF4700F050AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F8B4E21D21EF4700F050AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F8B4ED1D21EF4700F050AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07F8B4C41D21EF4700F050AB = {
+			isa = PBXGroup;
+			children = (
+				07F8B4CF1D21EF4700F050AB /* SushiNeko */,
+				07F8B4E81D21EF4700F050AB /* SushiNekoTests */,
+				07F8B4F31D21EF4700F050AB /* SushiNekoUITests */,
+				07F8B4CE1D21EF4700F050AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07F8B4CE1D21EF4700F050AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07F8B4CD1D21EF4700F050AB /* SushiNeko.app */,
+				07F8B4E51D21EF4700F050AB /* SushiNekoTests.xctest */,
+				07F8B4F01D21EF4700F050AB /* SushiNekoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07F8B4CF1D21EF4700F050AB /* SushiNeko */ = {
+			isa = PBXGroup;
+			children = (
+				07EF0AB71D233E8200E6E7EE /* IntroEffects.sks */,
+				07EF0AB81D233E8200E6E7EE /* spark.png */,
+				078551BC1D22DB5D00FA3B7E /* AnimationActions.sks */,
+				07F8B4D01D21EF4700F050AB /* AppDelegate.swift */,
+				07F8B4D21D21EF4700F050AB /* GameScene.sks */,
+				077049BF1D224B540063967A /* Character.swift */,
+				07F8B4D41D21EF4700F050AB /* GameScene.swift */,
+				07F8B5231D21F2BB00F050AB /* SushiPiece.swift */,
+				07F8B4D61D21EF4700F050AB /* GameViewController.swift */,
+				07F8B4D81D21EF4700F050AB /* Main.storyboard */,
+				07F8B4DB1D21EF4700F050AB /* Assets.xcassets */,
+				07F8B5051D21F06F00F050AB /* Utils */,
+				07F8B5021D21EFF200F050AB /* SFX 2 */,
+				07F8B4DD1D21EF4700F050AB /* LaunchScreen.storyboard */,
+				07F8B4E01D21EF4700F050AB /* Info.plist */,
+			);
+			path = SushiNeko;
+			sourceTree = "<group>";
+		};
+		07F8B4E81D21EF4700F050AB /* SushiNekoTests */ = {
+			isa = PBXGroup;
+			children = (
+				07F8B4E91D21EF4700F050AB /* SushiNekoTests.swift */,
+				07F8B4EB1D21EF4700F050AB /* Info.plist */,
+			);
+			path = SushiNekoTests;
+			sourceTree = "<group>";
+		};
+		07F8B4F31D21EF4700F050AB /* SushiNekoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07F8B4F41D21EF4700F050AB /* SushiNekoUITests.swift */,
+				07F8B4F61D21EF4700F050AB /* Info.plist */,
+			);
+			path = SushiNekoUITests;
+			sourceTree = "<group>";
+		};
+		07F8B5021D21EFF200F050AB /* SFX 2 */ = {
+			isa = PBXGroup;
+			children = (
+				07F8B5031D21EFF200F050AB /* sfx_swipe.caf */,
+			);
+			path = "SFX 2";
+			sourceTree = "<group>";
+		};
+		07F8B5051D21F06F00F050AB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				07F8B5061D21F06F00F050AB /* MSButtonNode.swift */,
+				07F8B5071D21F06F00F050AB /* MSReferenceNode.swift */,
+				07F8B5081D21F06F00F050AB /* SKTUtils */,
+			);
+			name = Utils;
+			path = "SFX 2/Utils";
+			sourceTree = "<group>";
+		};
+		07F8B5081D21F06F00F050AB /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				07F8B5091D21F06F00F050AB /* CGFloat+Extensions.swift */,
+				07F8B50A1D21F06F00F050AB /* CGPoint+Extensions.swift */,
+				07F8B50B1D21F06F00F050AB /* CGVector+Extensions.swift */,
+				07F8B50C1D21F06F00F050AB /* Int+Extensions.swift */,
+				07F8B50D1D21F06F00F050AB /* SKAction+Extensions.swift */,
+				07F8B50E1D21F06F00F050AB /* SKAction+SpecialEffects.swift */,
+				07F8B50F1D21F06F00F050AB /* SKColor+Extensions.swift */,
+				07F8B5101D21F06F00F050AB /* SKNode+Extensions.swift */,
+				07F8B5111D21F06F00F050AB /* SKTAudio.swift */,
+				07F8B5121D21F06F00F050AB /* SKTEffects.swift */,
+				07F8B5131D21F06F00F050AB /* SKTTimingFunctions.swift */,
+				07F8B5141D21F06F00F050AB /* Vector3.swift */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07F8B4CC1D21EF4700F050AB /* SushiNeko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F8B4F91D21EF4700F050AB /* Build configuration list for PBXNativeTarget "SushiNeko" */;
+			buildPhases = (
+				07F8B4C91D21EF4700F050AB /* Sources */,
+				07F8B4CA1D21EF4700F050AB /* Frameworks */,
+				07F8B4CB1D21EF4700F050AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SushiNeko;
+			productName = SushiNeko;
+			productReference = 07F8B4CD1D21EF4700F050AB /* SushiNeko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07F8B4E41D21EF4700F050AB /* SushiNekoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F8B4FC1D21EF4700F050AB /* Build configuration list for PBXNativeTarget "SushiNekoTests" */;
+			buildPhases = (
+				07F8B4E11D21EF4700F050AB /* Sources */,
+				07F8B4E21D21EF4700F050AB /* Frameworks */,
+				07F8B4E31D21EF4700F050AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07F8B4E71D21EF4700F050AB /* PBXTargetDependency */,
+			);
+			name = SushiNekoTests;
+			productName = SushiNekoTests;
+			productReference = 07F8B4E51D21EF4700F050AB /* SushiNekoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07F8B4EF1D21EF4700F050AB /* SushiNekoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F8B4FF1D21EF4700F050AB /* Build configuration list for PBXNativeTarget "SushiNekoUITests" */;
+			buildPhases = (
+				07F8B4EC1D21EF4700F050AB /* Sources */,
+				07F8B4ED1D21EF4700F050AB /* Frameworks */,
+				07F8B4EE1D21EF4700F050AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07F8B4F21D21EF4700F050AB /* PBXTargetDependency */,
+			);
+			name = SushiNekoUITests;
+			productName = SushiNekoUITests;
+			productReference = 07F8B4F01D21EF4700F050AB /* SushiNekoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07F8B4C51D21EF4700F050AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "TestingDummies@_@";
+				TargetAttributes = {
+					07F8B4CC1D21EF4700F050AB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					07F8B4E41D21EF4700F050AB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 07F8B4CC1D21EF4700F050AB;
+					};
+					07F8B4EF1D21EF4700F050AB = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 07F8B4CC1D21EF4700F050AB;
+					};
+				};
+			};
+			buildConfigurationList = 07F8B4C81D21EF4700F050AB /* Build configuration list for PBXProject "SushiNeko" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07F8B4C41D21EF4700F050AB;
+			productRefGroup = 07F8B4CE1D21EF4700F050AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07F8B4CC1D21EF4700F050AB /* SushiNeko */,
+				07F8B4E41D21EF4700F050AB /* SushiNekoTests */,
+				07F8B4EF1D21EF4700F050AB /* SushiNekoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07F8B4CB1D21EF4700F050AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078551BD1D22DB5D00FA3B7E /* AnimationActions.sks in Resources */,
+				07EF0AB91D233E8200E6E7EE /* IntroEffects.sks in Resources */,
+				07F8B5041D21EFF200F050AB /* sfx_swipe.caf in Resources */,
+				07F8B4D31D21EF4700F050AB /* GameScene.sks in Resources */,
+				07F8B4DF1D21EF4700F050AB /* LaunchScreen.storyboard in Resources */,
+				07EF0ABA1D233E8200E6E7EE /* spark.png in Resources */,
+				07F8B4DC1D21EF4700F050AB /* Assets.xcassets in Resources */,
+				07F8B4DA1D21EF4700F050AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F8B4E31D21EF4700F050AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F8B4EE1D21EF4700F050AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07F8B4C91D21EF4700F050AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F8B5181D21F06F00F050AB /* CGPoint+Extensions.swift in Sources */,
+				07F8B5201D21F06F00F050AB /* SKTEffects.swift in Sources */,
+				07F8B51B1D21F06F00F050AB /* SKAction+Extensions.swift in Sources */,
+				07F8B4D51D21EF4700F050AB /* GameScene.swift in Sources */,
+				07F8B51E1D21F06F00F050AB /* SKNode+Extensions.swift in Sources */,
+				07F8B4D71D21EF4700F050AB /* GameViewController.swift in Sources */,
+				07F8B5211D21F06F00F050AB /* SKTTimingFunctions.swift in Sources */,
+				07F8B51C1D21F06F00F050AB /* SKAction+SpecialEffects.swift in Sources */,
+				07F8B51A1D21F06F00F050AB /* Int+Extensions.swift in Sources */,
+				07F8B5221D21F06F00F050AB /* Vector3.swift in Sources */,
+				07F8B4D11D21EF4700F050AB /* AppDelegate.swift in Sources */,
+				07F8B51D1D21F06F00F050AB /* SKColor+Extensions.swift in Sources */,
+				07F8B5191D21F06F00F050AB /* CGVector+Extensions.swift in Sources */,
+				07F8B5161D21F06F00F050AB /* MSReferenceNode.swift in Sources */,
+				07F8B51F1D21F06F00F050AB /* SKTAudio.swift in Sources */,
+				07F8B5241D21F2BB00F050AB /* SushiPiece.swift in Sources */,
+				07F8B5171D21F06F00F050AB /* CGFloat+Extensions.swift in Sources */,
+				07F8B5151D21F06F00F050AB /* MSButtonNode.swift in Sources */,
+				077049C01D224B540063967A /* Character.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F8B4E11D21EF4700F050AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F8B4EA1D21EF4700F050AB /* SushiNekoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F8B4EC1D21EF4700F050AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F8B4F51D21EF4700F050AB /* SushiNekoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07F8B4E71D21EF4700F050AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F8B4CC1D21EF4700F050AB /* SushiNeko */;
+			targetProxy = 07F8B4E61D21EF4700F050AB /* PBXContainerItemProxy */;
+		};
+		07F8B4F21D21EF4700F050AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F8B4CC1D21EF4700F050AB /* SushiNeko */;
+			targetProxy = 07F8B4F11D21EF4700F050AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07F8B4D81D21EF4700F050AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07F8B4D91D21EF4700F050AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07F8B4DD1D21EF4700F050AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07F8B4DE1D21EF4700F050AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07F8B4F71D21EF4700F050AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07F8B4F81D21EF4700F050AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07F8B4FA1D21EF4700F050AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SushiNeko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.SushiNeko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07F8B4FB1D21EF4700F050AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SushiNeko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.SushiNeko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07F8B4FD1D21EF4700F050AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = SushiNekoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.SushiNekoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SushiNeko.app/SushiNeko";
+			};
+			name = Debug;
+		};
+		07F8B4FE1D21EF4700F050AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SushiNekoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.SushiNekoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SushiNeko.app/SushiNeko";
+			};
+			name = Release;
+		};
+		07F8B5001D21EF4700F050AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = SushiNekoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.SushiNekoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SushiNeko;
+			};
+			name = Debug;
+		};
+		07F8B5011D21EF4700F050AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SushiNekoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.SushiNekoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SushiNeko;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07F8B4C81D21EF4700F050AB /* Build configuration list for PBXProject "SushiNeko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F8B4F71D21EF4700F050AB /* Debug */,
+				07F8B4F81D21EF4700F050AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F8B4F91D21EF4700F050AB /* Build configuration list for PBXNativeTarget "SushiNeko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F8B4FA1D21EF4700F050AB /* Debug */,
+				07F8B4FB1D21EF4700F050AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F8B4FC1D21EF4700F050AB /* Build configuration list for PBXNativeTarget "SushiNekoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F8B4FD1D21EF4700F050AB /* Debug */,
+				07F8B4FE1D21EF4700F050AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F8B4FF1D21EF4700F050AB /* Build configuration list for PBXNativeTarget "SushiNekoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F8B5001D21EF4700F050AB /* Debug */,
+				07F8B5011D21EF4700F050AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07F8B4C51D21EF4700F050AB /* Project object */;
+}
